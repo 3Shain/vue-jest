@@ -1,7 +1,7 @@
 {
-  "name": "@vue/vue3-jest",
+  "name": "@kairo/vue3-jest",
   "version": "27.0.0-alpha.2",
-  "description": "Jest Vue transform",
+  "description": "Jest Vue SFC transform for kairo",
   "main": "lib/index.js",
   "files": [
     "lib"
@@ -9,19 +9,13 @@
   "keywords": [
     "jest",
     "vue",
-    "jest vue",
-    "jest vue transform",
-    "jest vue preprocessor",
-    "vue jest",
-    "vue jest",
-    "vue jest transform",
-    "vue jest preprocessor"
+    "kairo"
   ],
   "scripts": {
     "release": "semantic-release",
     "test": "echo \"There are no unit tests yet. Run e2e/3.x/ tests instead.\""
   },
-  "author": "Edd Yerburgh",
+  "author": "3Shain",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.9.0",
@@ -62,7 +56,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vuejs/vue-jest.git"
+    "url": "git+https://github.com/3shain/vue-jest.git"
   },
   "husky": {
     "hooks": {

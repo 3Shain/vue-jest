@@ -63,5 +63,9 @@ module.exports = function generateCode(
     )
   }
 
+  node.add(`
+  exports.default = require('@kairo/vue').patchComponent(exports.default);
+  `)
+
   return node.toStringWithSourceMap({ file: filename })
 }
