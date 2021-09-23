@@ -158,7 +158,8 @@ module.exports = function(src, filename, config) {
     scriptSetupResult,
     templateResult,
     filename,
-    stylesResult
+    stylesResult,
+    /<script( (.*?) | )kairo(>| (.*?)>)/.test(src)
   )
 
   return {

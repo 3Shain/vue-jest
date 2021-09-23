@@ -20,7 +20,8 @@ module.exports = function generateCode(
   scriptSetupResult,
   templateResult,
   filename,
-  stylesResult
+  stylesResult,
+  isKairoComponent
 ) {
   var node = new SourceNode(null, null, null)
   addToSourceMap(node, scriptResult)
@@ -63,9 +64,11 @@ module.exports = function generateCode(
     )
   }
 
-  node.add(`
-  exports.default = require('@kairo/vue').patchComponent(exports.default);
+  if (isKairoComponent) {
+    node.add(`
+      ;exports.default = require('@kairo/vue').patchComponent(exports.default);
   `)
+  }
 
   return node.toStringWithSourceMap({ file: filename })
 }

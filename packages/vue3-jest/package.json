@@ -1,6 +1,6 @@
 {
   "name": "@kairo/vue3-jest",
-  "version": "27.0.0-alpha.2",
+  "version": "27.0.0-alpha.3",
   "description": "Jest Vue SFC transform for kairo",
   "main": "lib/index.js",
   "files": [
